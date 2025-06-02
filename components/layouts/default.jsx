@@ -38,7 +38,7 @@ export default function DefaultLayout({ children, page }) {
 
 			<header style={{backgroundImage:'url(/uploads/building.jpg)'}} className={page.data.large_header ? 'main-hero' : ''}>
 				<div className="container">
-					<h1><Link href="/">{data.company.company_name}</Link></h1>
+					<h2><Link href="/">{data.company.company_name}</Link></h2>
 					<nav>
 						<ul>
 							<li>
@@ -46,21 +46,21 @@ export default function DefaultLayout({ children, page }) {
 									About
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link href="/services" className={page.slug === 'services' ? 'active' : ''}>
 									Services
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link href="/contact" className={page.slug === 'contact' ? 'active' : ''}>
 									Contact
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link href="/blog" className={page.slug === 'blog' ? 'active' : ''}>
 									Blog
 								</Link>
-							</li>
+							</li> */}
 						</ul>
 					</nav>
 				</div>
@@ -73,18 +73,18 @@ export default function DefaultLayout({ children, page }) {
 			{page.data.call_to_action === 'Contact' && (
 				<section className="quote-section">
 					<p className="container">
-						<Link href="/contact">Contact us</Link> today to find out how we can help you. Your first consultation is free.
+						<Link href="/contact">Contact Me Here</Link>
 					</p>
 				</section>
 			)}
 
-			{page.data.call_to_action === 'Blog' && (
+			{/* {page.data.call_to_action === 'Blog' && (
 				<section className="quote-section">
 					<p className="container">
 						<Link href="/blog">Read our blog</Link> for an introduction and quick tips on various areas of the law.
 					</p>
 				</section>
-			)}
+			)} */}
 
 			<footer>
 				<div className="container">
@@ -110,16 +110,17 @@ export default function DefaultLayout({ children, page }) {
 								<h2>{data.company.company_name}</h2>
 							</li>
 							<li>{data.company.description}</li>
-							<li>
+							{/* <li>
 								<Link href="/feed.xml"><Icon icon="RSS" /> Subscribe with RSS</Link>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>
 
 				<div className="legal-line">
 					<p className="container">
-						&copy; {new Date().getFullYear()} {data.company.company_name} &bull; <Link href="/terms">Terms</Link> &bull; Template by <Link href="https://cloudcannon.com/">CloudCannon</Link>
+						&copy; {new Date().getFullYear()} {data.company.company_name}
+					{/* <Link href="/terms"></Link>                to link terms*/}
 					</p>
 				</div>
 			</footer>

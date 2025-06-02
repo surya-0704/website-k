@@ -2,5 +2,5 @@
 title: About
 call_to_action: Contact
 large_header: false
-content_html: <p>Serving your community for over a century, Justice Law is committed to helping people through a number of services.</p><p>Our services range from conveyancing, mortgages to family law. Our clients range from large businesses to first home buyers.</p>
+content_html: <p>Meet Khushi Tripathi, a driven and ambitious 4th-year B.B.A.LL.B student specializing in Criminal Law with a passion for justice. With a keen interest in judicial services, I'm committed to developing my skills in research and public speaking to make a lasting impact in the legal arena.</p>
 ---
